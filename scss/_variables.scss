@@ -5,10 +5,6 @@ $tablet: 600px;
 $laptop: 900px;
 $desktop: 1100px;
 
-@function color($color-name) {
-  @return map-get($colors, $color-name);
-}
-
 @mixin tablet{
   @media (min-width: #{$tablet}) {
     @content;
