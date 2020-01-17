@@ -6,6 +6,8 @@ html{
     margin-top: 0rem;
     box-sizing: 0rem;
 }
+https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required
+
 
 .slideshow-container {
     max-width: 800px;
@@ -28,7 +30,7 @@ html{
   .dot {
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 2rem;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -40,20 +42,20 @@ html{
   }
   
   /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration: 5s;
-  }
+  // .fade {
+  //   -webkit-animation-name: fade;
+  //   -webkit-animation-duration: 5s;
+  //   animation-name: fade;
+  //   animation-duration: 5s;
+  // }
   
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+  // @-webkit-keyframes fade {
+  //   from {opacity: .7} 
+  //   to {opacity: 1}
+  // }
   
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+  // @keyframes fade {
+  //   from {opacity: .7} 
+  //   to {opacity: 1}
+  // }
   

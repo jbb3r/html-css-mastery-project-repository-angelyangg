@@ -27,7 +27,7 @@ html {
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 2rem;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -40,32 +40,7 @@ html {
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 5s;
-  animation-name: fade;
-  animation-duration: 5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 body {
-  background-color: white;
+  background-color: aliceblue;
 }
 /*# sourceMappingURL=style.css.map */
