@@ -5,64 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quando|Ropa+Sans&display=swap" rel="stylesheet"> 
     <link rel="icon" href="css/img/Logo.png"/>
     <title>I Love Iceland</title>
 </head>
 <body>
 
-    <div class="slideshow-container">
-
-        <div class="mySlides">
-          <img src="css/img/northern-lights.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-        
-        <div class="mySlides">
-          <img src="css/img/black-beach.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides">
-          <img src="css/img/waterfall2.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-        
-        </div>
-        
-        <div style="text-align:center">
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-          <span class="dot"></span> 
-        </div>
 
 
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 5000);
-            }
-            </script>
-            
+  https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 
-<div class="navigation">
-    <label class="navigation-button"></label>
+
+
+
+  <div class="slideshow">
+    <img class="unsaturate" src="css/img/waterfall-3.jpg" alt="Slide 3" />
+    <img class="saturate" src="css/img/glacier.jpg" alt="Slide 2" />
+    <img class="saturate" src="css/img/northern-lights.jpg" alt="Slide 1" />
+  </div>
+
+<div class="header">
+  
+  <div class="heading-text-box">
+    <h1 class="heading-main">Iceland</h1>
+    <button class="heading-button">Book Now</button>
+  </div>
+
 </div>
+
+  <div class="navigation">
+      <label class="navigation-button"></label>
+  </div>
 
 </body>
 </html>
