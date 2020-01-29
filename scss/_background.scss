@@ -9,7 +9,7 @@ html{
 
 .slideshow {
   width:auto;
-  height:100rem;
+  height:100%;
   overflow:hidden;
   position:relative; }
 
@@ -19,9 +19,13 @@ html{
   opacity: 0;
   width: 100%;
   height: auto; 
+  // @include phone{
+  //   width: 90vw;
+  //   height: 90rem;
+  // }
   @include tablet{
-    width: 100vw;
-    height: 75rem;
+    width: 99vw;
+    height: 100rem;
   }
 }
  

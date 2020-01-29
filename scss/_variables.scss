@@ -3,22 +3,22 @@ $skyblue: rgb(103, 208, 243);
 $white: white;
 $black: black;
 
-$phone: 600px;
-$tablet: 900px;
+$phone: 812px;
+$tablet: 1024px;
 $laptop: 1100px;
 
 @mixin phone{
-  @media (min-width: #{$phone}) {
+  @media (max-width: #{$phone}) {
     @content;
   }
 }
 @mixin tablet{
-  @media (min-width: #{$tablet}) {
+  @media (max-width: #{$tablet}) {
     @content;
   }
 }
 @mixin laptop{
-  @media (min-width: #{$laptop}) {
+  @media (max-width: #{$laptop}) {
     @content;
   }
 }

@@ -8,7 +8,7 @@ html {
 
 .slideshow {
   width: auto;
-  height: 100rem;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -22,10 +22,10 @@ html {
   height: auto;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1024px) {
   .slideshow img {
-    width: 100vw;
-    height: 75rem;
+    width: 99vw;
+    height: 100rem;
   }
 }
 
@@ -101,7 +101,7 @@ html {
   text-shadow: 3px 3px 3px black;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1024px) {
   .heading-main {
     font-size: 7rem;
   }
@@ -112,16 +112,16 @@ html {
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
   padding: 3rem;
-  margin-bottom: 2rem;
+  margin: -2rem;
   border: solid;
   border-color: white;
   border-radius: 5rem;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 1024px) {
   .heading-button {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin: -2rem;
   }
 }
 
