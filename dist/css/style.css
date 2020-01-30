@@ -2,8 +2,8 @@ html {
   font-size: 62.5%;
   padding: 0rem;
   margin-top: 0rem;
-  -webkit-box-sizing: 0rem;
-          box-sizing: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .slideshow {
@@ -76,8 +76,71 @@ html {
   font-size: 62.5%;
   padding: 0rem;
   margin-top: 0rem;
-  -webkit-box-sizing: 0rem;
-          box-sizing: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 10rem;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+  font-family: 'Ropa Sans', sans-serif;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0rem;
+  margin-top: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
@@ -112,7 +175,6 @@ html {
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
   padding: 3rem;
-  margin: -2rem;
   border: solid;
   border-color: white;
   border-radius: 5rem;
