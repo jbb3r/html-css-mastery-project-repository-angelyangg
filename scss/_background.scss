@@ -11,7 +11,8 @@ html{
   width:auto;
   height:100%;
   overflow:hidden;
-  position:relative; }
+  position:relative;
+}
 
 .slideshow img{
   position:absolute;
@@ -19,11 +20,15 @@ html{
   opacity: 0;
   width: 100%;
   height: auto; 
-  // @include phone{
-  //   width: 90vw;
-  //   height: 90rem;
-  // }
+  @include phone{
+    height: 90rem;
+    object-fit: cover;
+  }
   @include tablet{
+    width: 99vw;
+    height: 100rem;
+  }
+  @include laptop{
     width: 99vw;
     height: 100rem;
   }
@@ -36,8 +41,14 @@ html{
 
 .unsaturate{
   filter: saturate(75%);
+  @include phone{
+    object-position: 19% 0;
+  }
 }
 
 .saturate{
   filter: saturate(110%);
+  @include phone{
+    object-position: 45% 0;
+  }
 }

@@ -13,19 +13,26 @@ html{
   left: 50%;
   transform: translate(-50% , -50%);
   text-align: center;
+  @include phone{
+    top: 47%;
+  }
 }
 
 .heading-main{
   text-transform: uppercase;
+  letter-spacing: .2rem;
   font-size: 8rem;
   font-family: 'Quando', serif;
   color: $white;
   text-shadow: 3px 3px 3px $black;
-  // @include phone{
-  //   font-size: 3rem;
-  // }
+  @include phone{
+    font-size: 5.5rem;
+  }
   @include tablet{
     font-size: 7rem;
+  }
+  @include laptop{
+    font-size: 8rem;
   }
 }
 
@@ -34,11 +41,23 @@ html{
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
   padding: 3rem;
+  margin: -4rem;
   border: solid;
   border-color: $white;
   border-radius: 5rem;
+  @include phone{
+    width: 17rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin: -2rem;
+  }
   @include tablet{
     font-size: 2.5rem;
     margin: -2rem;
+  }
+  @include laptop{
+    width: 24rem;
+    font-size: 3rem;
+    margin: -4rem;
   }
 }
