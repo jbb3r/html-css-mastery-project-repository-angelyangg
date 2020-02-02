@@ -33,14 +33,14 @@ html {
 @media (min-width: 768px) and (max-width: 1024px) {
   .slideshow img {
     width: 99vw;
-    height: 100rem;
+    height: 100vh;
   }
 }
 
 @media (min-width: 900px) and (max-width: 1440px) {
   .slideshow img {
     width: 99vw;
-    height: 100rem;
+    height: 100vh;
   }
 }
 
@@ -122,11 +122,23 @@ html {
        user-select: none;
 }
 
+@media (min-width: 375px) and (max-width: 812px) {
+  #menuToggle {
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #menuToggle {
+    margin-right: 4rem;
+  }
+}
+
 #menuToggle a {
   text-decoration: none;
   color: black;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 #menuToggle a:hover {
@@ -152,7 +164,7 @@ html {
   height: 4px;
   margin-bottom: .5rem;
   position: relative;
-  background: aliceblue;
+  background: white;
   border-radius: 3px;
   z-index: 1;
   -webkit-transform-origin: 4px 0px;
@@ -191,17 +203,14 @@ html {
           transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
 #menu {
   position: absolute;
   width: 20rem;
+  height: 100vh;
   margin: -10rem 0 0 -5rem;
   padding: 5rem;
   padding-top: 12rem;
-  background: aliceblue;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   -webkit-transform-origin: 0% 0%;
@@ -214,15 +223,26 @@ html {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
+@media (min-width: 375px) and (max-width: 812px) {
+  #menu {
+    width: 69vw;
+    opacity: .94;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #menu {
+    width: 89vw;
+    opacity: .94;
+  }
+}
+
 #menu li {
-  padding: 3rem 0;
+  padding: 2rem 0;
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul {
   -webkit-transform: none;
           transform: none;
@@ -284,6 +304,7 @@ html {
   font-family: 'Ropa Sans', sans-serif;
   padding: 3rem;
   margin: -4rem;
+  cursor: pointer;
   border: solid;
   border-color: white;
   border-radius: 5rem;
@@ -311,6 +332,38 @@ html {
     font-size: 3rem;
     margin: -4rem;
   }
+}
+
+.heading-button:hover {
+  scale: .9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.heading-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.heading-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -2rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.heading-button:hover span {
+  padding-right: 2rem;
+}
+
+.heading-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 html {
@@ -396,6 +449,6 @@ html {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

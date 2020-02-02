@@ -42,6 +42,7 @@ html{
   font-family: 'Ropa Sans', sans-serif;
   padding: 3rem;
   margin: -4rem;
+  cursor: pointer;
   border: solid;
   border-color: $white;
   border-radius: 5rem;
@@ -60,4 +61,33 @@ html{
     font-size: 3rem;
     margin: -4rem;
   }
+}
+
+.heading-button:hover{
+  scale: .9;
+  transition: 0.4s;
+}
+
+.heading-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.heading-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -2rem;
+  transition: 0.6s;
+}
+
+.heading-button:hover span {
+  padding-right: 2rem;
+}
+
+.heading-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

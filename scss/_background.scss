@@ -26,11 +26,11 @@ html{
   }
   @include tablet{
     width: 99vw;
-    height: 100rem;
+    height: 100vh;
   }
   @include laptop{
     width: 99vw;
-    height: 100rem;
+    height: 100vh;
   }
 }
  
