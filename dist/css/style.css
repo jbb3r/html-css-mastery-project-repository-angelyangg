@@ -324,7 +324,6 @@ html {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .heading-button {
-    background-color: white;
     font-size: 2.5rem;
     margin: -2rem;
   }
@@ -332,7 +331,6 @@ html {
 
 @media (min-width: 900px) and (max-width: 1440px) {
   .heading-button {
-    background-color: white;
     width: 24rem;
     font-size: 3rem;
     margin: -4rem;
@@ -340,7 +338,7 @@ html {
 }
 
 .heading-button:hover {
-  scale: .9;
+  scale: .95;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -387,23 +385,20 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100vh;
   margin-left: 30rem;
 }
 
 .image-one {
-  width: 80rem;
-  height: 60rem;
+  width: 60rem;
+  height: 40rem;
   border-radius: 5rem;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 80rem;
-  height: 60rem;
+  width: 60rem;
+  height: 40rem;
   -webkit-perspective: 100rem;
           perspective: 100rem;
 }

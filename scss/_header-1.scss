@@ -56,12 +56,10 @@ html{
     margin: -2rem;
   }
   @include tablet{
-    background-color: $white;
     font-size: 2.5rem;
     margin: -2rem;
   }
   @include laptop{
-    background-color: $white;
     width: 24rem;
     font-size: 3rem;
     margin: -4rem;
@@ -75,7 +73,7 @@ html{
 // }
 
 .heading-button:hover{
-  scale: .9;
+  scale: .95;
   transition: 0.4s;
 }
 

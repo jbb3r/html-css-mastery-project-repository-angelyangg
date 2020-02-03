@@ -10,19 +10,18 @@ html{
 .header-flip-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
     margin-left: 30rem;
 }
 .image-one {
-    width: 80rem;
-    height: 60rem;
+    width: 60rem;
+    height: 40rem;
     border-radius: 5rem;
 }
 .flip-card {
     background-color: transparent;
-    width: 80rem;
-    height: 60rem;
+    width: 60rem;
+    height: 40rem;
     perspective: 100rem;
   }
   
