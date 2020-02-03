@@ -49,9 +49,9 @@ html{
   border-color: $white;
   border-radius: 5rem;
   @include phone{
-    background-color: $white;
     width: 17rem;
     font-size: 2.5rem;
+    letter-spacing: 0rem;
     padding: 2rem;
     margin: -2rem;
   }

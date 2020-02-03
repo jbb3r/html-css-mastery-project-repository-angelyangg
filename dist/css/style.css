@@ -314,9 +314,9 @@ html {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .heading-button {
-    background-color: white;
     width: 17rem;
     font-size: 2.5rem;
+    letter-spacing: 0rem;
     padding: 2rem;
     margin: -2rem;
   }
