@@ -40,28 +40,39 @@ html{
   width: 24rem;
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
+  letter-spacing: 0.2rem;
   padding: 3rem;
   margin: -4rem;
   cursor: pointer;
+  background-color: $white;
   border: solid;
   border-color: $white;
   border-radius: 5rem;
   @include phone{
+    background-color: $white;
     width: 17rem;
     font-size: 2.5rem;
     padding: 2rem;
     margin: -2rem;
   }
   @include tablet{
+    background-color: $white;
     font-size: 2.5rem;
     margin: -2rem;
   }
   @include laptop{
+    background-color: $white;
     width: 24rem;
     font-size: 3rem;
     margin: -4rem;
   }
 }
+
+// .heading-button:active{
+//   @include tablet{
+//     background-color: red;
+//   }
+// }
 
 .heading-button:hover{
   scale: .9;
