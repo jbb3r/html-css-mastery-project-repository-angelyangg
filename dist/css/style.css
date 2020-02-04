@@ -377,7 +377,7 @@ html {
           box-sizing: border-box;
 }
 
-.header-flip-card {
+.header-flip-card-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,22 +385,38 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: 30rem;
+  height: 100vh;
 }
 
-.image-one {
+.card {
   width: 60rem;
   height: 40rem;
   border-radius: 5rem;
 }
 
-.flip-card {
+.flip-card-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: transparent;
   width: 60rem;
   height: 40rem;
-  -webkit-perspective: 100rem;
-          perspective: 100rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+.flip-card-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  width: 60rem;
+  height: 40rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
 }
 
 .flip-card-inner {
@@ -419,7 +435,7 @@ html {
   border-radius: 5rem;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card-left:hover .flip-card-inner, .flip-card-right:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
