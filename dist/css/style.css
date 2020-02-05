@@ -377,7 +377,22 @@ html {
           box-sizing: border-box;
 }
 
-.header-flip-card-left {
+.flip-cards-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,36 +402,33 @@ html {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 30rem;
+  margin-right: -55rem;
   height: 100vh;
+}
+
+.right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  width: 60rem;
+  height: 40rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 60rem;
+  height: 40rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
 }
 
 .card {
   width: 60rem;
   height: 40rem;
   border-radius: 5rem;
-}
-
-.flip-card-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: transparent;
-  width: 60rem;
-  height: 40rem;
-  -webkit-perspective: 150rem;
-          perspective: 150rem;
-}
-
-.flip-card-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: transparent;
-  width: 60rem;
-  height: 40rem;
-  -webkit-perspective: 150rem;
-          perspective: 150rem;
 }
 
 .flip-card-inner {
@@ -435,7 +447,7 @@ html {
   border-radius: 5rem;
 }
 
-.flip-card-left:hover .flip-card-inner, .flip-card-right:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .right-container:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -455,13 +467,18 @@ html {
 
 .flip-card-back {
   background-color: aliceblue;
-  color: black;
   opacity: 80%;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
   border-radius: 5rem;
+}
+
+.flip-card-text {
+  color: black;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 3rem;
 }
 
 body {
