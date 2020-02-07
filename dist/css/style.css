@@ -486,11 +486,6 @@ html {
   margin: 0 5rem 0 5rem;
 }
 
-canvas {
-  display: block;
-  margin: 0 auto;
-}
-
 body {
   background-color: white;
 }
