@@ -94,6 +94,12 @@ html{
     transform-style: preserve-3d;
     box-shadow: 0 .5rem 1rem 0 $shadow;
     border-radius: 5rem;
+    @include phone{
+      border-radius: 3rem;
+    }
+    @include tablet{
+      border-radius: 4rem;
+    }
   }
   .flip-card:hover .flip-card-inner, .right-container:hover .flip-card-inner {
     transform: rotateY(180deg);

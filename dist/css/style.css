@@ -532,6 +532,18 @@ html {
   border-radius: 5rem;
 }
 
+@media (min-width: 375px) and (max-width: 812px) {
+  .flip-card-inner {
+    border-radius: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .flip-card-inner {
+    border-radius: 4rem;
+  }
+}
+
 .flip-card:hover .flip-card-inner, .right-container:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
