@@ -150,7 +150,8 @@ html{
   .clouds{
     @include phone{
       margin-top: -99vh;
-      background-size: 100vh;
+      background-size: 140rem;
+      height: 100vh;
     }
     @include tablet{
       margin-top: -99vh;

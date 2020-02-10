@@ -633,7 +633,8 @@ html {
 @media (min-width: 375px) and (max-width: 812px) {
   .clouds {
     margin-top: -99vh;
-    background-size: 100vh;
+    background-size: 140rem;
+    height: 100vh;
   }
 }
 
