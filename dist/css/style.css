@@ -642,6 +642,7 @@ html {
   .clouds {
     margin-top: -99vh;
     background-size: 200rem;
+    height: 100vh;
   }
 }
 
@@ -649,6 +650,7 @@ html {
   .clouds {
     margin-top: -99vh;
     background-size: 220rem;
+    height: 100vh;
   }
 }
 

@@ -156,10 +156,12 @@ html{
     @include tablet{
       margin-top: -99vh;
       background-size: 200rem;
+      height: 100vh;
     }
     @include laptop{
       margin-top: -99vh;
       background-size: 220rem;
+      height: 100vh;
     }
     z-index: 1;
     margin-top: -50%;
