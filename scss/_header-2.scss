@@ -9,36 +9,41 @@ html{
 .flip-cards-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  background-color: $royalblue;
+  background-image:       
+      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+  background-repeat: repeat-x;
+  background-size: 240rem;
+  animation: 120s para infinite linear;
+    @keyframes para {
+      100% {
+        background-position: 
+          500rem 50%;
+        }
+      }
 }
 .left-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-right: -55rem;
   height: 100vh;
   z-index: 2;
-  @include phone{
-    margin: 0;
-  }
-  @include tablet{
-    margin: 0;
-  }
-  @include laptop{
-    margin-right: -10rem;
-  }
 }
 .right-container {
   display: flex;
   width: 60rem;
   height: 40rem;
   perspective: 150rem;
+  margin-left: 5rem;
+  margin-top: 25rem;
   z-index: 2;
   @include phone{
     width: 25rem;
     height: 15rem;
     margin-left:-20rem;
+    margin-top: 33rem;
   }
   @include tablet{
     width: 45rem;
@@ -64,8 +69,6 @@ html{
   @include laptop{
     width: 55rem;
     height: 35rem;
-    // width: 45rem;
-    // height: 30rem;
   }
 }
 .card {
@@ -152,37 +155,17 @@ html{
 
   .clouds{
     @include phone{
-      margin-top: -99vh;
       background-size: 140rem;
       height: 100vh;
     }
     @include tablet{
-      margin-top: -99vh;
       background-size: 200rem;
       height: 100vh;
     }
     @include laptop{
-      margin-top: -99vh;
       background-size: 220rem;
       height: 100vh;
     }
-    z-index: 1;
-    margin-top: -50%;
-    height: 100%;
-    opacity: .3;
-    background-color: $royalblue;
-    background-image:       
-      url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-      url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-    background-repeat: repeat-x;
-    background-size: 240rem;
-    animation: 120s para infinite linear;
-    @keyframes para {
-      100% {
-        background-position: 
-          500rem 50%;
-        }
-      }
   }
 
 
