@@ -441,7 +441,8 @@ html {
     width: 25rem;
     height: 15rem;
     margin-left: -20rem;
-    margin-top: 33rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -544,12 +545,14 @@ html {
   }
 }
 
-.flip-card:hover .flip-card-inner, .right-container:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.right-container:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -592,7 +595,7 @@ html {
 
 .flip-card-text {
   color: black;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 2.5rem;
   margin: 0 5rem 0 5rem;
 }
