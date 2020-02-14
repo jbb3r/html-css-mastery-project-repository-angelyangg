@@ -1,35 +1,54 @@
 @import "_variables.scss";
 
-html{
-    font-size: 62.5%;
-    padding: 0rem;
-    margin-top: 0rem;
-    box-sizing: border-box;
+html {
+  font-size: 62.5%;
+  padding: 0rem;
+  margin-top: 0rem;
+  box-sizing: border-box;
 }
 // IMAGE W/ HOVER DROP DOWN TEXT EXPLAINING REYKJAVIK
 // https://codepen.io/amirnaeem/pen/BoZoWj?fbclid=IwAR3xQfLEzVbITu5gvX6tQ4M5fMS3s_GwgICc7t0V7ol3ZkJZMbh0skeZeW8
 
-BACKGROUND VIDEO WITH ABSOLUTE POSITIONING AND Z INDEX LOW
-
-.dropdown-text{
-    color: $purple;
-    font-size: 4rem;
-    font-family: 'Quando', serif;
-    text-align: center;
-    text-shadow: 1px 1px 1px $black;
+// .dropdown-video {
+//   position: fixed;
+//   z-index: -10;
+//   width: 100vw;
+//   height: auto;
+// }
+.dropdown-text {
+  color: $purple;
+  font-size: 4rem;
+  font-family: "Quando", serif;
+  text-align: center;
+  text-shadow: 1px 1px 1px $black;
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.dropdown-items {
+  width: 40%;
+  height: auto;
+  border: 0.8rem solid $skyblue;
+  border-radius: 5rem 5rem 0 0;
+  border-bottom: 0;
+  margin-left: 5rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: $skyblue;
+  z-index: 1;
 }
 
-.dropdown-header-images-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-.dropdown-header-images-items{
-    width: 40%;
-    height: auto;
-    border: .8rem solid $skyblue;
-    border-radius: 5rem 5rem 0 0;
-    border-bottom: 0;
-    margin-left: 5rem;
+.dropdown:hover {
+//   display: block;
+  transform: scale(1.05);
+  duration
 }

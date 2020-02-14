@@ -646,16 +646,15 @@ html {
           box-sizing: border-box;
 }
 
-BACKGROUND VIDEO WITH ABSOLUTE POSITIONING AND Z INDEX LOW
 .dropdown-text {
   color: #e59be1;
   font-size: 4rem;
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   text-align: center;
   text-shadow: 1px 1px 1px black;
 }
 
-.dropdown-header-images-container {
+.dropdown-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,13 +668,32 @@ BACKGROUND VIDEO WITH ABSOLUTE POSITIONING AND Z INDEX LOW
   width: 100%;
 }
 
-.dropdown-header-images-items {
+.dropdown-items {
   width: 40%;
   height: auto;
   border: 0.8rem solid #67d0f3;
   border-radius: 5rem 5rem 0 0;
   border-bottom: 0;
   margin-left: 5rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #67d0f3;
+  z-index: 1;
+}
+
+.dropdown:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 body {
