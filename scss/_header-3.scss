@@ -15,6 +15,12 @@ html {
 //   width: 100vw;
 //   height: auto;
 // }
+.dropdown-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .dropdown-text {
   color: $purple;
   font-size: 4rem;
@@ -22,33 +28,83 @@ html {
   text-align: center;
   text-shadow: 1px 1px 1px $black;
 }
-.dropdown-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.dropdown-container-left {
+  position: relative;
   width: 100%;
 }
-.dropdown-items {
-  width: 40%;
+.dropdown-container-right {
+  position: relative;
+  width: 100%;
+}
+.dropdown-left{
+  display: flex;
+  justify-content: center;
+}
+.dropdown-image-left{
+  display: block;
+  width: 80%;
   height: auto;
   border: 0.8rem solid $skyblue;
   border-radius: 5rem 5rem 0 0;
   border-bottom: 0;
-  margin-left: 5rem;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
+.dropdown-content-left {
   position: absolute;
-  display: none;
+  top: 100%;
+  left: auto;
+  right: auto;
   background-color: $skyblue;
-  z-index: 1;
+  overflow: hidden;
+  width: 40%;
+  height: 0;
+  transition: 0.3s ease;
+  border: 0.8rem solid $skyblue;
+  border-radius: 0 0 5rem 5rem;
+  border-top: 0;
+}
+.dropdown-right{
+  display: flex;
+  justify-content: center;
+}
+.dropdown-image-right{
+  display: block;
+  width: 80%;
+  height: auto;
+  border: 0.8rem solid $skyblue;
+  border-radius: 5rem 5rem 0 0;
+  border-bottom: 0;
+}
+.dropdown-content-right {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: auto;
+  background-color: $skyblue;
+  overflow: hidden;
+  width: 40%;
+  height: 0;
+  transition: 0.3s ease;
+  border: 0.8rem solid $skyblue;
+  border-radius: 0 0 5rem 5rem;
+  border-top: 0;
+}
+.dropdown-container-left:hover .dropdown-content-left {
+  bottom: 0;
+  height: 100%;
+}
+.dropdown-container-right:hover .dropdown-content-right {
+  bottom: 0;
+  height: 100%;
 }
 
-.dropdown:hover {
-//   display: block;
-  transform: scale(1.05);
-  duration
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
