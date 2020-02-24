@@ -40,7 +40,6 @@ html{
   width: 24rem;
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
-  letter-spacing: 0.2rem;
   padding: 3rem;
   margin: -4rem;
   cursor: pointer;
@@ -51,7 +50,6 @@ html{
   @include phone{
     width: 17rem;
     font-size: 2.5rem;
-    letter-spacing: 0rem;
     padding: 2rem;
     margin: -2rem;
   }

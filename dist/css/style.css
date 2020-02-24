@@ -302,7 +302,6 @@ html {
   width: 24rem;
   font-size: 3rem;
   font-family: 'Ropa Sans', sans-serif;
-  letter-spacing: 0.2rem;
   padding: 3rem;
   margin: -4rem;
   cursor: pointer;
@@ -316,7 +315,6 @@ html {
   .heading-button {
     width: 17rem;
     font-size: 2.5rem;
-    letter-spacing: 0rem;
     padding: 2rem;
     margin: -2rem;
   }
@@ -375,6 +373,68 @@ html {
   margin-top: 0rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.flip-cards-heading-1 {
+  position: absolute;
+  margin-left: 63rem;
+  margin-top: 10rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 6rem;
+  font-family: 'Quando', serif;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .flip-cards-heading-1 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .flip-cards-heading-1 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .flip-cards-heading-1 {
+    margin-left: 59rem;
+    margin-top: 10rem;
+  }
+}
+
+.flip-cards-heading-2 {
+  position: absolute;
+  margin-left: 63rem;
+  margin-top: 75rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 6rem;
+  font-family: 'Quando', serif;
+  color: aliceblue;
+  text-shadow: 3px 3px 3px black;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .flip-cards-heading-2 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .flip-cards-heading-2 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .flip-cards-heading-2 {
+    margin-left: 59rem;
+    margin-top: 70rem;
+  }
 }
 
 .flip-cards-header {
@@ -655,7 +715,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: linear-gradient(-45deg, #bee3f1, white, #bee3f1);
+  background: linear-gradient(-45deg, #67d0f3, aliceblue, #bee3f1);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
           animation: gradient 15s ease infinite;
@@ -666,7 +726,7 @@ html {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    background: linear-gradient(-45deg, aliceblue, white, #bee3f1);
+    background: linear-gradient(-45deg, aliceblue, #bee3f1);
   }
 }
 
@@ -962,10 +1022,8 @@ html {
 
 .dropdown-container-left:hover .dropdown-content-left {
   height: 40rem;
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -975,18 +1033,14 @@ html {
 }
 
 .dropdown-image-left:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .dropdown-container-right:hover .dropdown-content-right {
   height: 40rem;
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -996,16 +1050,14 @@ html {
 }
 
 .dropdown-image-right:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .dropdown-header-text:hover {
   color: #67d0f3;
-  -webkit-transition: .4s ease;
-  transition: .4s ease;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
@@ -1045,6 +1097,14 @@ html {
   100% {
     background-position: 0% 50%;
   }
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0rem;
+  margin-top: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {

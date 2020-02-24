@@ -6,6 +6,50 @@ html {
   margin-top: 0rem;
   box-sizing: border-box;
 }
+
+.flip-cards-heading-1{
+  position: absolute;
+  margin-left: 63rem;
+  margin-top: 10rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 6rem;
+  font-family: 'Quando', serif;
+  color: $white;
+  text-shadow: 3px 3px 3px $black;
+  @include phone {
+    opacity: 0;
+  }
+  @include tablet {
+    opacity: 0;
+  }
+  @include laptop {
+    margin-left: 59rem;
+    margin-top: 10rem;
+  }
+}
+.flip-cards-heading-2{
+  position: absolute;
+  margin-left: 63rem;
+  margin-top: 75rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 6rem;
+  font-family: 'Quando', serif;
+  color: $lightestblue;
+  text-shadow: 3px 3px 3px $black;
+  @include phone {
+    opacity: 0;
+  }
+  @include tablet {
+    opacity: 0;
+  }
+  @include laptop {
+    margin-left: 59rem;
+    margin-top: 70rem;
+  }
+}
+
 .flip-cards-header {
   display: flex;
   flex-direction: row;

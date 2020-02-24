@@ -19,12 +19,12 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(-45deg, $blue, $white, $blue);
-	background-size: 400% 400%;
+  background: linear-gradient(-45deg, $skyblue, $lightestblue, $blue);
+  background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   @include phone {
     justify-content: space-evenly;
-    background: linear-gradient(-45deg, $lightestblue, $white, $blue);
+    background: linear-gradient(-45deg, $lightestblue, $blue);
   }
   @include tablet {
     justify-content: space-evenly;
@@ -38,7 +38,7 @@ html {
   margin-right: auto;
   width: 68vw;
   background-color: $white;
-  box-shadow: .7rem .7rem $black;
+  box-shadow: 0.7rem 0.7rem $black;
   color: $purple;
   font-size: 4rem;
   font-family: "Quando", serif;
@@ -55,7 +55,7 @@ html {
     font-size: 3.5rem;
   }
 }
-.dropdown-container-both{
+.dropdown-container-both {
   display: flex;
   flex-direction: row;
   @include phone {
@@ -88,28 +88,31 @@ html {
     width: auto;
   }
 }
-.dropdown-left{
+@mixin margin-left {
+  margin-left: 0;
+}
+.dropdown-left {
   display: flex;
   justify-content: center;
   margin-left: 25rem;
   @include phone {
-    margin-left: 0;
+    @include margin-left;
   }
   @include tablet {
-    margin-left: 0;
+    @include margin-left;
   }
   @include laptop {
-    margin-left: 0;
+    @include margin-left;
   }
 }
-.dropdown-image-left{
+.dropdown-image-left {
   width: 55rem;
   height: auto;
   border: 0.8rem solid $skyblue;
   border-radius: 5rem 5rem 0 0;
-  box-shadow: .7rem .7rem $black;
+  box-shadow: 0.7rem 0.7rem $black;
   @include phone {
-    box-shadow: .5rem .5rem $black;
+    box-shadow: 0.5rem 0.5rem $black;
     width: 32rem;
   }
   @include tablet {
@@ -130,7 +133,7 @@ html {
   border: 0.8rem solid $skyblue;
   border-radius: 0 0 5rem 5rem;
   border-top: 0;
-  box-shadow: .7rem .7rem $black;
+  box-shadow: 0.7rem 0.7rem $black;
   @include phone {
     box-shadow: none;
     border: none;
@@ -141,28 +144,31 @@ html {
     border: none;
   }
 }
-.dropdown-right{
+@mixin margin-right {
+  margin-right: 0;
+}
+.dropdown-right {
   display: flex;
   justify-content: center;
   margin-right: 25rem;
   @include phone {
-    margin-right: 0;
+    @include margin-right;
   }
   @include tablet {
-    margin-right: 0;
+    @include margin-right;
   }
   @include laptop {
-    margin-right: 0;
+    @include margin-right;
   }
 }
-.dropdown-image-right{
+.dropdown-image-right {
   width: 55rem;
   height: auto;
   border: 0.8rem solid $skyblue;
   border-radius: 5rem 5rem 0 0;
-  box-shadow: .7rem .7rem $black;
+  box-shadow: 0.7rem 0.7rem $black;
   @include phone {
-    box-shadow: .5rem .5rem $black;
+    box-shadow: 0.5rem 0.5rem $black;
     border-top: none;
     border-radius: 0 0 5rem 5rem;
     width: 32rem;
@@ -186,7 +192,7 @@ html {
   border: 0.8rem solid $skyblue;
   border-radius: 0 0 5rem 5rem;
   border-top: 0;
-  box-shadow: .7rem .7rem $black;
+  box-shadow: 0.7rem 0.7rem $black;
   @include phone {
     box-shadow: none;
     border: none;
@@ -199,31 +205,27 @@ html {
 }
 .dropdown-container-left:hover .dropdown-content-left {
   height: 40rem;
-  filter: brightness(1.1);
-  transition: .4s ease;
+  transition: 0.4s ease;
   @include laptop {
     height: 30rem;
   }
 }
-.dropdown-image-left:hover{
-  filter: brightness(1.1);
-  transition: .4s ease;
+.dropdown-image-left:hover {
+  transition: 0.4s ease;
 }
 .dropdown-container-right:hover .dropdown-content-right {
   height: 40rem;
-  filter: brightness(1.1);
-  transition: .4s ease;
+  transition: 0.4s ease;
   @include laptop {
     height: 30rem;
   }
 }
-.dropdown-image-right:hover{
-  filter: brightness(1.1);
-  transition: .4s ease;
+.dropdown-image-right:hover {
+  transition: 0.4s ease;
 }
-.dropdown-header-text:hover{
+.dropdown-header-text:hover {
   color: $skyblue;
-  transition: .4s ease;
+  transition: 0.4s ease;
   transform: translateY(5px);
 }
 .dropdown-text {
@@ -238,14 +240,13 @@ html {
   text-align: center;
 }
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
