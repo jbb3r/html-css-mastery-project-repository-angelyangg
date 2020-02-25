@@ -32,17 +32,15 @@ html {
 }
 .dropdown-header-text {
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   border-radius: 3rem;
   margin-left: auto;
   margin-right: auto;
-  width: 68vw;
-  background-color: $white;
-  box-shadow: 0.7rem 0.7rem $black;
+  width: 34vw;
   color: $purple;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: "Quando", serif;
   text-align: center;
+  text-shadow: 2px 2px $black;
   @include phone {
     font-size: 2.5rem;
   }
@@ -224,7 +222,7 @@ html {
   transition: 0.4s ease;
 }
 .dropdown-header-text:hover {
-  color: $skyblue;
+  color: $violet;
   transition: 0.4s ease;
   transform: translateY(5px);
 }
