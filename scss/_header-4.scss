@@ -8,19 +8,33 @@ html {
 }
 .accordion-header{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
   height: 100vh;
   margin: 0 auto;
 }
+.accordion-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 55rem;
+  padding-left: 3rem;
+}
 .accordion-heading{
   // text-transform: uppercase;
-  text-align: center;
+  // text-align: center;
   // letter-spacing: 2rem;
-  font-size: 6rem;
-  font-family: 'Petit Formal Script', ;
+  font-size: 5rem;
+  font-family: 'Quando', serif;
   color: $skyblue;
   text-shadow: 2px 2px 2px $black;
+}
+.accordion-heading-text{
+  padding-right: 2rem;
+  margin-top: -2rem;
+  font-size: 2rem;
+  font-family: 'Quando', serif;
+  color: $skyblue;
 }
 .gallery-wrap {
   display: flex;
@@ -28,6 +42,7 @@ html {
   width: 100%;
   height: 70vh;
   margin-bottom: 5rem;
+  padding-left: 5rem;
 }
 .item {
   flex: 1;
@@ -46,11 +61,11 @@ html {
 }
 
 .item-2 { 
-  background-image: url('img/fox-1.jpg');
+  background-image: url('img/puffins.jpg');
 }
 
 .item-3 { 
-  background-image: url('img/puffins.jpg');
+  background-image: url('img/fox-1.jpg');
 }
 
 .item-4 { 
