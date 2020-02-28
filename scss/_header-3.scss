@@ -6,9 +6,6 @@ html {
   margin-top: 0rem;
   box-sizing: border-box;
 }
-// IMAGE W/ HOVER DROP DOWN TEXT EXPLAINING REYKJAVIK
-// https://codepen.io/amirnaeem/pen/BoZoWj?fbclid=IwAR3xQfLEzVbITu5gvX6tQ4M5fMS3s_GwgICc7t0V7ol3ZkJZMbh0skeZeW8
-
 // .dropdown-video {
 //   position: fixed;
 //   z-index: -10;
@@ -40,7 +37,6 @@ html {
   font-size: 4.5rem;
   font-family: "Quando", serif;
   text-align: center;
-  text-shadow: 2px 2px $black;
   @include phone {
     font-size: 2.5rem;
   }
@@ -104,10 +100,9 @@ html {
   }
 }
 .dropdown-image-left {
-  width: 55rem;
+  width: 70rem;
   height: auto;
   border: 0.8rem solid $skyblue;
-  border-radius: 5rem 5rem 0 0;
   box-shadow: 0.7rem 0.7rem $black;
   @include phone {
     box-shadow: 0.5rem 0.5rem $black;
@@ -115,21 +110,19 @@ html {
   }
   @include tablet {
     width: 43rem;
-    border-radius: 5rem 0 0 5rem;
   }
 }
 .dropdown-content-left {
   position: absolute;
-  width: 55rem;
+  width: 70rem;
   height: 0;
-  top: 39rem;
+  top: 49rem;
   left: auto;
   right: auto;
   background-color: $skyblue;
   overflow: hidden;
   transition: 0.3s ease;
   border: 0.8rem solid $skyblue;
-  border-radius: 0 0 5rem 5rem;
   border-top: 0;
   box-shadow: 0.7rem 0.7rem $black;
   @include phone {
@@ -160,35 +153,31 @@ html {
   }
 }
 .dropdown-image-right {
-  width: 55rem;
+  width: 70rem;
   height: auto;
   border: 0.8rem solid $skyblue;
-  border-radius: 5rem 5rem 0 0;
   box-shadow: 0.7rem 0.7rem $black;
   @include phone {
     box-shadow: 0.5rem 0.5rem $black;
     border-top: none;
-    border-radius: 0 0 5rem 5rem;
     width: 32rem;
   }
   @include tablet {
     width: 43rem;
     border-left: 0;
-    border-radius: 0 5rem 5rem 0;
   }
 }
 .dropdown-content-right {
   position: absolute;
-  width: 55rem;
+  width: 70rem;
   height: 0;
-  top: 39rem;
+  top: 49rem;
   left: auto;
   right: auto;
   background-color: $skyblue;
   overflow: hidden;
   transition: 0.3s ease;
   border: 0.8rem solid $skyblue;
-  border-radius: 0 0 5rem 5rem;
   border-top: 0;
   box-shadow: 0.7rem 0.7rem $black;
   @include phone {
@@ -228,7 +217,7 @@ html {
 }
 .dropdown-text {
   color: $white;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Quando", serif;
   position: absolute;
   width: 85%;

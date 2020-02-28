@@ -206,7 +206,7 @@ html {
 #menu {
   position: absolute;
   width: 20rem;
-  height: 81vh;
+  height: 84vh;
   margin: -10rem 0 0 -5rem;
   padding: 5rem;
   padding-top: 12rem;
@@ -239,7 +239,7 @@ html {
 
 #menu li {
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Ropa Sans', sans-serif;
 }
 
@@ -748,7 +748,6 @@ html {
   font-size: 4.5rem;
   font-family: "Quando", serif;
   text-align: center;
-  text-shadow: 2px 2px black;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
@@ -869,10 +868,9 @@ html {
 }
 
 .dropdown-image-left {
-  width: 55rem;
+  width: 70rem;
   height: auto;
   border: 0.8rem solid #67d0f3;
-  border-radius: 5rem 5rem 0 0;
   -webkit-box-shadow: 0.7rem 0.7rem black;
           box-shadow: 0.7rem 0.7rem black;
 }
@@ -888,15 +886,14 @@ html {
 @media (min-width: 813px) and (max-width: 1024px) {
   .dropdown-image-left {
     width: 43rem;
-    border-radius: 5rem 0 0 5rem;
   }
 }
 
 .dropdown-content-left {
   position: absolute;
-  width: 55rem;
+  width: 70rem;
   height: 0;
-  top: 39rem;
+  top: 49rem;
   left: auto;
   right: auto;
   background-color: #67d0f3;
@@ -904,7 +901,6 @@ html {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   border: 0.8rem solid #67d0f3;
-  border-radius: 0 0 5rem 5rem;
   border-top: 0;
   -webkit-box-shadow: 0.7rem 0.7rem black;
           box-shadow: 0.7rem 0.7rem black;
@@ -956,10 +952,9 @@ html {
 }
 
 .dropdown-image-right {
-  width: 55rem;
+  width: 70rem;
   height: auto;
   border: 0.8rem solid #67d0f3;
-  border-radius: 5rem 5rem 0 0;
   -webkit-box-shadow: 0.7rem 0.7rem black;
           box-shadow: 0.7rem 0.7rem black;
 }
@@ -969,7 +964,6 @@ html {
     -webkit-box-shadow: 0.5rem 0.5rem black;
             box-shadow: 0.5rem 0.5rem black;
     border-top: none;
-    border-radius: 0 0 5rem 5rem;
     width: 32rem;
   }
 }
@@ -978,15 +972,14 @@ html {
   .dropdown-image-right {
     width: 43rem;
     border-left: 0;
-    border-radius: 0 5rem 5rem 0;
   }
 }
 
 .dropdown-content-right {
   position: absolute;
-  width: 55rem;
+  width: 70rem;
   height: 0;
-  top: 39rem;
+  top: 49rem;
   left: auto;
   right: auto;
   background-color: #67d0f3;
@@ -994,7 +987,6 @@ html {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   border: 0.8rem solid #67d0f3;
-  border-radius: 0 0 5rem 5rem;
   border-top: 0;
   -webkit-box-shadow: 0.7rem 0.7rem black;
           box-shadow: 0.7rem 0.7rem black;
@@ -1061,7 +1053,7 @@ html {
 
 .dropdown-text {
   color: white;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Quando", serif;
   position: absolute;
   width: 85%;
@@ -1105,6 +1097,7 @@ html {
 }
 
 .accordion-header {
+  background-color: aliceblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1136,16 +1129,15 @@ html {
 
 .accordion-heading {
   font-size: 5rem;
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   color: #67d0f3;
-  text-shadow: 2px 2px 2px black;
 }
 
 .accordion-heading-text {
-  padding-right: 2rem;
+  padding-right: 4rem;
   margin-top: -2rem;
-  font-size: 2rem;
-  font-family: 'Quando', serif;
+  font-size: 2.5rem;
+  font-family: "Quando", serif;
   color: #67d0f3;
 }
 
@@ -1185,18 +1177,26 @@ html {
 
 .item-1 {
   background-image: url("img/horse-1.jpg");
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .item-2 {
   background-image: url("img/puffins.jpg");
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .item-3 {
   background-image: url("img/fox-1.jpg");
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .item-4 {
   background-image: url("img/whale-1.jpg");
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   -webkit-filter: brightness(1.4);
           filter: brightness(1.4);
 }

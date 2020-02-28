@@ -6,34 +6,32 @@ html {
   margin-top: 0rem;
   box-sizing: border-box;
 }
-.accordion-header{
+.accordion-header {
+  // background-image: url(img/bg.jpg);
+  background-color: $lightestblue;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 100vh;
   margin: 0 auto;
 }
-.accordion-text{
+.accordion-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 55rem;
   padding-left: 3rem;
 }
-.accordion-heading{
-  // text-transform: uppercase;
-  // text-align: center;
-  // letter-spacing: 2rem;
+.accordion-heading {
   font-size: 5rem;
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   color: $skyblue;
-  text-shadow: 2px 2px 2px $black;
 }
-.accordion-heading-text{
-  padding-right: 2rem;
+.accordion-heading-text {
+  padding-right: 4rem;
   margin-top: -2rem;
-  font-size: 2rem;
-  font-family: 'Quando', serif;
+  font-size: 2.5rem;
+  font-family: "Quando", serif;
   color: $skyblue;
 }
 .gallery-wrap {
@@ -51,24 +49,29 @@ html {
   background-size: cover;
   background-repeat: none;
   transition: flex 0.8s ease;
-  
-  &:hover{
+
+  &:hover {
     flex: 4;
   }
 }
-.item-1 { 
-  background-image: url('img/horse-1.jpg');
+.item-1 {
+  background-image: url("img/horse-1.jpg");
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.item-2 { 
-  background-image: url('img/puffins.jpg');
+.item-2 {
+  background-image: url("img/puffins.jpg");
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.item-3 { 
-  background-image: url('img/fox-1.jpg');
+.item-3 {
+  background-image: url("img/fox-1.jpg");
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.item-4 { 
-  background-image: url('img/whale-1.jpg');
+.item-4 {
+  background-image: url("img/whale-1.jpg");
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   filter: brightness(1.4);
 }
+
