@@ -880,12 +880,14 @@ html {
     -webkit-box-shadow: 0.5rem 0.5rem black;
             box-shadow: 0.5rem 0.5rem black;
     width: 32rem;
+    height: auto;
   }
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .dropdown-image-left {
     width: 43rem;
+    height: auto;
   }
 }
 
@@ -965,12 +967,14 @@ html {
             box-shadow: 0.5rem 0.5rem black;
     border-top: none;
     width: 32rem;
+    height: auto;
   }
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .dropdown-image-right {
     width: 43rem;
+    height: auto;
     border-left: 0;
   }
 }

@@ -107,9 +107,11 @@ html {
   @include phone {
     box-shadow: 0.5rem 0.5rem $black;
     width: 32rem;
+    height: auto;
   }
   @include tablet {
     width: 43rem;
+    height: auto;
   }
 }
 .dropdown-content-left {
@@ -161,9 +163,11 @@ html {
     box-shadow: 0.5rem 0.5rem $black;
     border-top: none;
     width: 32rem;
+    height: auto;
   }
   @include tablet {
     width: 43rem;
+    height: auto;
     border-left: 0;
   }
 }
