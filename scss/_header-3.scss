@@ -107,7 +107,7 @@ html {
   @include phone {
     box-shadow: 0.5rem 0.5rem $black;
     width: 32rem;
-    height: auto;
+    height: 23rem;
   }
   @include tablet {
     width: 43rem;
@@ -163,7 +163,7 @@ html {
     box-shadow: 0.5rem 0.5rem $black;
     border-top: none;
     width: 32rem;
-    height: auto;
+    height: 23rem;
   }
   @include tablet {
     width: 43rem;
