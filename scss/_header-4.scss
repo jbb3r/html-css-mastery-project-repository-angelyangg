@@ -37,13 +37,14 @@ html {
 	font-weight: 900;
   font-size: 7rem;
   @include phone {
+    margin-right: 4.3rem;
     margin-top: 6rem;
     letter-spacing: -.8rem;
     font-weight: 800;
     font-size: 4rem;
   }
   @include tablet {
-    font-size: 6rem;
+    font-size: 5.9rem;
   }
   @include laptop {
     font-size: 6.5rem;

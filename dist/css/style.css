@@ -887,7 +887,7 @@ html {
 @media (min-width: 813px) and (max-width: 1024px) {
   .dropdown-image-left {
     width: 43rem;
-    height: auto;
+    height: 30rem;
   }
 }
 
@@ -974,7 +974,7 @@ html {
 @media (min-width: 813px) and (max-width: 1024px) {
   .dropdown-image-right {
     width: 43rem;
-    height: auto;
+    height: 30rem;
     border-left: 0;
   }
 }
@@ -1156,6 +1156,7 @@ html {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .accordion-heading {
+    margin-right: 4.3rem;
     margin-top: 6rem;
     letter-spacing: -.8rem;
     font-weight: 800;
@@ -1165,7 +1166,7 @@ html {
 
 @media (min-width: 813px) and (max-width: 1024px) {
   .accordion-heading {
-    font-size: 6rem;
+    font-size: 5.9rem;
   }
 }
 
