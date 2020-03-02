@@ -1019,6 +1019,18 @@ html {
   transition: 0.4s ease;
 }
 
+@media (min-width: 375px) and (max-width: 812px) {
+  .dropdown-container-left:hover .dropdown-content-left {
+    height: 0rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .dropdown-container-left:hover .dropdown-content-left {
+    height: 0rem;
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1440px) {
   .dropdown-container-left:hover .dropdown-content-left {
     height: 30rem;
@@ -1034,6 +1046,18 @@ html {
   height: 35rem;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .dropdown-container-right:hover .dropdown-content-right {
+    height: 0rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1024px) {
+  .dropdown-container-right:hover .dropdown-content-right {
+    height: 0rem;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {

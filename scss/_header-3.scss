@@ -197,6 +197,12 @@ html {
 .dropdown-container-left:hover .dropdown-content-left {
   height: 35rem;
   transition: 0.4s ease;
+  @include phone{
+    height: 0rem;
+  }
+  @include tablet{
+    height: 0rem;
+  }
   @include laptop {
     height: 30rem;
   }
@@ -207,6 +213,12 @@ html {
 .dropdown-container-right:hover .dropdown-content-right {
   height: 35rem;
   transition: 0.4s ease;
+  @include phone{
+    height: 0rem;
+  }
+  @include tablet{
+    height: 0rem;
+  }
   @include laptop {
     height: 30rem;
   }
