@@ -99,7 +99,7 @@ html{
 {
   position: absolute;
   width: 20rem;
-  height: 84vh;
+  height: 102rem;
   margin: -10rem 0 0 -5rem;
   padding: 5rem;
   padding-top: 12rem;
@@ -111,11 +111,16 @@ html{
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   @include phone{
     width: 69vw;
+    height: 65rem;
     opacity: .94;
   }
   @include tablet{
     width: 89vw;
+    height: 60.5rem;
     opacity: .94;
+  }
+  @include laptop{
+    height: 73.5rem;
   }
 }
 

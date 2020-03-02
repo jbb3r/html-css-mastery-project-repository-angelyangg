@@ -206,7 +206,7 @@ html {
 #menu {
   position: absolute;
   width: 20rem;
-  height: 84vh;
+  height: 102rem;
   margin: -10rem 0 0 -5rem;
   padding: 5rem;
   padding-top: 12rem;
@@ -226,6 +226,7 @@ html {
 @media (min-width: 375px) and (max-width: 812px) {
   #menu {
     width: 69vw;
+    height: 65rem;
     opacity: .94;
   }
 }
@@ -233,7 +234,14 @@ html {
 @media (min-width: 813px) and (max-width: 1024px) {
   #menu {
     width: 89vw;
+    height: 60.5rem;
     opacity: .94;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #menu {
+    height: 73.5rem;
   }
 }
 
