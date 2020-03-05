@@ -383,6 +383,44 @@ html {
           box-sizing: border-box;
 }
 
+.flip-cards-header {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(10, 129, 189, 0.3);
+  background-image: url("https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png"), url("https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");
+  background-repeat: repeat-x;
+  background-size: 240rem;
+  -webkit-animation: 120s para infinite linear;
+          animation: 120s para infinite linear;
+}
+
+@-webkit-keyframes para {
+  100% {
+    background-position: 500rem 50%;
+  }
+}
+
+@keyframes para {
+  100% {
+    background-position: 500rem 50%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .flip-cards-header {
+    width: 96vw;
+  }
+}
+
 .flip-cards-heading-1 {
   position: absolute;
   margin-left: 64rem;
@@ -397,6 +435,7 @@ html {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .flip-cards-heading-1 {
+    margin-left: 0;
     opacity: 0;
   }
 }
@@ -428,6 +467,7 @@ html {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .flip-cards-heading-2 {
+    margin-left: 0;
     opacity: 0;
   }
 }
@@ -442,37 +482,6 @@ html {
   .flip-cards-heading-2 {
     margin-left: 59rem;
     margin-top: 70rem;
-  }
-}
-
-.flip-cards-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: rgba(10, 129, 189, 0.3);
-  background-image: url("https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png"), url("https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");
-  background-repeat: repeat-x;
-  background-size: 240rem;
-  -webkit-animation: 120s para infinite linear;
-          animation: 120s para infinite linear;
-}
-
-@-webkit-keyframes para {
-  100% {
-    background-position: 500rem 50%;
-  }
-}
-
-@keyframes para {
-  100% {
-    background-position: 500rem 50%;
   }
 }
 
@@ -515,6 +524,7 @@ html {
   .right-container {
     width: 45rem;
     height: 30rem;
+    margin-top: 26rem;
   }
 }
 
@@ -750,7 +760,7 @@ html {
 }
 
 .dropdown-header-text {
-  padding-top: 1.5rem;
+  padding-top: 1 .5rem;
   border-radius: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -1461,6 +1471,87 @@ html {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
+}
+
+html {
+  font-size: 62.5%;
+  padding: 0rem;
+  margin-top: 0rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #67d0f3;
+}
+
+.footer .col {
+  width: 20rem;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Futura, sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4rem;
+  padding: 20px 0px 5px 0px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+
+.clearfix {
+  clear: both;
 }
 
 body {
