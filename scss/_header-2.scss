@@ -10,7 +10,7 @@ html {
 .flip-cards-heading-1{
   position: absolute;
   margin-left: 64rem;
-  margin-top: 10rem;
+  margin-top: 20rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-size: 6rem;
@@ -31,7 +31,7 @@ html {
 .flip-cards-heading-2{
   position: absolute;
   margin-left: 63rem;
-  margin-top: 75rem;
+  margin-top: 87rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-size: 6rem;
@@ -78,7 +78,7 @@ html {
   height: 40rem;
   perspective: 150rem;
   margin-left: 5rem;
-  margin-top: 25rem;
+  margin-top: 35rem;
   z-index: 2;
   @include phone {
     width: 25rem;

@@ -282,7 +282,7 @@ html {
 .heading-main {
   text-transform: uppercase;
   letter-spacing: .2rem;
-  font-size: 8rem;
+  font-size: 9rem;
   font-family: 'Quando', serif;
   color: white;
   text-shadow: 3px 3px 3px black;
@@ -308,7 +308,7 @@ html {
 
 .heading-button {
   width: 24rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Ropa Sans', sans-serif;
   padding: 3rem;
   margin: -4rem;
@@ -386,7 +386,7 @@ html {
 .flip-cards-heading-1 {
   position: absolute;
   margin-left: 64rem;
-  margin-top: 10rem;
+  margin-top: 20rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-size: 6rem;
@@ -417,7 +417,7 @@ html {
 .flip-cards-heading-2 {
   position: absolute;
   margin-left: 63rem;
-  margin-top: 75rem;
+  margin-top: 87rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-size: 6rem;
@@ -497,7 +497,7 @@ html {
   -webkit-perspective: 150rem;
           perspective: 150rem;
   margin-left: 5rem;
-  margin-top: 25rem;
+  margin-top: 35rem;
   z-index: 2;
 }
 
@@ -723,6 +723,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background: linear-gradient(-45deg, #67d0f3, aliceblue, #bee3f1);
   background-size: 400% 400%;
   -webkit-animation: gradient 15s ease infinite;
