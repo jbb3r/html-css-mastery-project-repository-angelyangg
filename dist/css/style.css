@@ -760,7 +760,6 @@ html {
 }
 
 .dropdown-header-text {
-  padding-top: 1 .5rem;
   border-radius: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -799,6 +798,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 20rem;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
@@ -1532,15 +1532,22 @@ html {
   cursor: pointer;
 }
 
-.social ul li {
-  display: inline-block;
+.footer .col ul li:hover {
+  color: white;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.social-icons {
+  font-size: 3rem;
+  color: #19729e;
   padding-right: 1rem;
 }
 
-.footer .col ul li:hover {
+.social-icons:hover {
   color: white;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
   -webkit-transition: .3s;
   transition: .3s;
 }

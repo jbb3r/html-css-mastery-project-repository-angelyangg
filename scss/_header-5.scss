@@ -25,7 +25,7 @@ html {
 .footer .col h1 {
   margin: 0;
   padding: 0;
-	font-family: "Quando", serif;
+  font-family: "Quando", serif;
   font-size: 3rem;
   line-height: 7rem;
   color: $white;
@@ -44,14 +44,17 @@ html {
   padding: 1.2rem 0 0 0;
   cursor: pointer;
 }
-.social ul li {
-  display: inline-block;
-  padding-right: 1rem;
-}
-
 .footer .col ul li:hover {
   color: $white;
-  transform: translateY(3px);
+  transform: translateX(1rem);
   transition: .3s;
 }
-
+.social-icons{
+  font-size: 3rem;
+  color: $navyblue;
+  padding-right: 1rem;
+}
+.social-icons:hover {
+  color: $white;
+  transition: .3s;
+}
