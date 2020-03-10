@@ -15,12 +15,23 @@ html {
   height: auto;
   background-color: $skyblue;
 }
+.contain{
+  display: flex;
+  justify-content: row;
+}
 .footer .col {
   width: 25rem;
   height: auto;
   float: left;
   box-sizing: border-box;
   padding: 3rem 0 5rem 6rem;
+  @include phone{
+    padding: 2rem 0rem 2rem 4rem;
+    width: 10rem;
+  }
+  @include tablet{
+    padding: 2rem 0rem 4rem 5rem;
+  }
 }
 .footer .col h1 {
   margin: 0;
@@ -30,6 +41,14 @@ html {
   line-height: 7rem;
   color: $white;
   text-transform: uppercase;
+  @include phone{
+    font-size: 1.4rem;
+    line-height: 4rem;
+    margin: -2px;
+  }
+  @include tablet{
+    font-size: 2.5rem;
+  }
 }
 .footer .col ul {
   list-style-type: none;
@@ -43,6 +62,12 @@ html {
   font-weight: bold;
   padding: 1.2rem 0 0 0;
   cursor: pointer;
+  @include phone{
+    font-size: 1.2rem;
+  }
+  @include tablet{
+    font-size: 2rem;
+  }
 }
 .footer .col ul li:hover {
   color: $white;
@@ -53,8 +78,22 @@ html {
   font-size: 3rem;
   color: $navyblue;
   padding-right: 1rem;
+  @include phone{
+    margin-top: 25%;
+  }
 }
 .social-icons:hover {
   color: $white;
   transition: .3s;
+}
+.social{
+  @include phone{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+.gtfo{
+  @include phone{
+    display: none;
+  }
 }
