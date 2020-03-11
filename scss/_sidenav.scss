@@ -48,7 +48,6 @@ html{
   cursor: pointer;
   opacity: 0;
   z-index: 2;
-  -webkit-touch-callout: none;
 }
 
 #menuToggle span
@@ -97,15 +96,14 @@ html{
 
 #menu
 {
-  position: absolute;
+  position: fixed;
   width: 20rem;
-  height: 102rem;
+  height: 100vh;
   margin: -10rem 0 0 -5rem;
   padding: 5rem;
   padding-top: 12rem;
   background: $white;
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
