@@ -9,12 +9,11 @@ html{
 #menuToggle
 {
   display: block;
-  position: relative;
+  position: fixed;
   top: 8rem;
   left: 5rem;
   margin-top: -3rem;
   z-index: 1;
-  -webkit-user-select: none;
   user-select: none;
   @include phone{
     margin-right: 4rem;
@@ -96,7 +95,6 @@ html{
 
 #menu
 {
-  position: fixed;
   width: 20rem;
   height: 100vh;
   margin: -10rem 0 0 -5rem;
