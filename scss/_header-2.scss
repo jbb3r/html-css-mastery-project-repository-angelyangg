@@ -23,52 +23,38 @@ html {
       background-position: 500rem 50%;
     }
   }
-  @include phone{
+  @include phone {
     width: 96vw;
   }
 }
-.flip-cards-heading-1{
-  position: absolute;
-  margin-left: 64rem;
-  margin-top: 20rem;
+.flip-cards-heading-1 {
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 6rem;
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   color: $white;
   text-shadow: 3px 3px 3px $black;
   @include phone {
-    margin-left: 0;
-    opacity: 0;
+    display: none;
   }
   @include tablet {
-    opacity: 0;
-  }
-  @include laptop {
-    margin-left: 59rem;
-    margin-top: 10rem;
+    display: none;
   }
 }
-.flip-cards-heading-2{
-  position: absolute;
-  margin-left: 63rem;
-  margin-top: 87rem;
+.flip-cards-heading-2 {
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 6rem;
-  font-family: 'Quando', serif;
+  font-family: "Quando", serif;
   color: $lightestblue;
   text-shadow: 3px 3px 3px $black;
   @include phone {
-    margin-left: 0;
-    opacity: 0;
+    display: none;
   }
   @include tablet {
-    opacity: 0;
-  }
-  @include laptop {
-    margin-left: 59rem;
-    margin-top: 70rem;
+    display: none;
   }
 }
 .left-container {
@@ -77,25 +63,35 @@ html {
   justify-content: space-evenly;
   height: 100vh;
   z-index: 2;
+  @include phone{
+    margin-bottom: 4rem;
+  }
 }
 .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10rem;
+  @include phone{
+    margin-bottom: 4rem;
+    margin-left: -25rem;
+  }
+  @include tablet{
+    margin-left: 2rem;
+  }
+}
+.right-items {
   width: 60rem;
   height: 40rem;
   perspective: 150rem;
-  margin-left: 5rem;
-  margin-top: 35rem;
   z-index: 2;
   @include phone {
     width: 25rem;
     height: 15rem;
-    margin-left: -20rem;
-    margin-top: auto;
-    margin-bottom: auto;
   }
   @include tablet {
     width: 45rem;
     height: 30rem;
-    margin-top: 26rem;
   }
   @include laptop {
     width: 55rem;
