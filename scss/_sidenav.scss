@@ -106,17 +106,17 @@ html{
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   @include phone{
-    width: 69vw;
-    height: 65rem;
+    width: 72vw;
+    height: 70rem;
     opacity: .94;
   }
   @include tablet{
-    width: 89vw;
-    height: 60.5rem;
+    width: 90vw;
+    height: 63rem;
     opacity: .94;
   }
   @include laptop{
-    height: 73.5rem;
+    height: 75rem;
   }
 }
 

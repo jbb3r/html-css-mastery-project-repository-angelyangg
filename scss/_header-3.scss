@@ -32,9 +32,11 @@ html {
   font-family: "Quando", serif;
   text-align: center;
   @include phone {
+    margin-top: 30rem;
     font-size: 2.5rem;
   }
   @include tablet {
+    margin-top: 30rem;
     width: 62vw;
     font-size: 3.5rem;
   }
@@ -222,7 +224,6 @@ html {
   transition: 0.4s ease;
 }
 .dropdown-header-text:hover {
-  color: $violet;
   transition: 0.4s ease;
   transform: translateY(5px);
 }
